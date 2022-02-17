@@ -1,0 +1,25 @@
+.profileimg{
+    width: 40%;
+    /* height: 33%; */
+    padding: -5px;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 40px;
+    border-block-color: 2px solid black;
+    /* border-block-color: inherit; */
+    border-color: black;
+    border-radius: 69px;
+    background-color: black;
+}
+
+.text{
+    font-size: 12px;
+}
+
+.top-50 {
+    top: 63%!important;
+}
+.icons{
+    /* display: block; */
+    margin-left: 91px;
+}
