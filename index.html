@@ -228,22 +228,23 @@
 
             // //searching text
             let search = document.getElementById('searchText');
-            console.log(search)
+//             console.log(search)
 
             search.addEventListener("input", function () {
 
                 let value = search.value;
                 let array = document.getElementsByClassName('card');
-                console.log(array)
+//                 console.log(array)
 
                 Array.from(array).forEach(function (element) {
-
+                console.log(element);
                     let text = element.getElementsByTagName('p')[0].innerText;
 
                     // console.log(text)
 
                     if (text.includes(value)) {
                         element.style.display = "block";
+                        
 
                     }
                     else {
