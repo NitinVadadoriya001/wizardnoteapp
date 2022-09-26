@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="w1.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+    <link rel="stylesheet" href="dark.css" media="{prefers-color-scheme:dark}">
+    <link rel="stylesheet" href="light.css" media="{prefers-color-scheme:light}">
 </head>
 
 <body style="background-color: #092834; color: white ;">
@@ -29,6 +32,11 @@
 
                     </li>
                 </ul>
+                <!-- <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                  </div> -->
+                  <dark-mode-toggle id="dark-mode-toggle-1" appearance="toggle" dark="Dark" light="Light"></dark-mode-toggle>
+
                 <form class="d-flex">
                     <input class="form-control me-2" id="searchText" type="search" placeholder="Search"
                         aria-label="Search">
@@ -39,7 +47,7 @@
     </nav>
 
     <div class="container my-3 ">
-        <h1><img style="width: 12%;height: auto; border-radius: 22px; border-radius: 79px;" src="wizard.jpg"
+        <h1 id="head"><img style="width: 12%;height: auto; border-radius: 22px; border-radius: 79px;" src="wizard.jpg"
                 alt="wizard">
             Welcome to Wizard NoteBook</h1>
         <div class="card">
@@ -67,7 +75,7 @@
 
         </div>
         <div>
-            <h1>Your Note</h1>
+            <h1 id="yourNote">Your Note</h1>
 
             <br>
             <button class="btn btn-primary" id="removeAll">Remove ALL</button>
