@@ -35,7 +35,8 @@
                 <!-- <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
                   </div> -->
-                  <dark-mode-toggle id="dark-mode-toggle-1" appearance="toggle" dark="Dark" light="Light"></dark-mode-toggle>
+                <dark-mode-toggle id="dark-mode-toggle-1" appearance="toggle" dark="Dark" light="Light">
+                </dark-mode-toggle>
 
                 <form class="d-flex">
                     <input class="form-control me-2" id="searchText" type="search" placeholder="Search"
@@ -65,10 +66,14 @@
                 <div class="mb-3">
 
                 </div>
-                <div class="mb-3">
 
+                <div class="mb-3">
                     <textarea placeholder="Enter note here" class="form-control" id="addText" rows="3"></textarea>
                     <div class="invalid-feedback">* Don't leave this note empty!</div>
+                </div>
+                <!-- checkbox include  -->
+                <div style="color: black !important; font-size: 13px;" class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBox">Important
                 </div>
                 <button class="btn btn-primary" id="addBtn">Add Note</button>
             </div>
